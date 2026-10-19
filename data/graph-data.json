@@ -1,0 +1,1433 @@
+{
+  "project": [
+    {
+      "project_id": "FM-2026-001",
+      "schema_version": "1.0",
+      "version": "1.1.1",
+      "title": "智能制造产线模块化设计及控制虚拟仿真实验",
+      "short_title": "柔性产线设计与控制",
+      "direction": "未来制造",
+      "discipline": "机械工程",
+      "reference_institution": "厦门工学院",
+      "description": "围绕轴与轴套柔性产线的设计、调试和优化，串联实验培养目标、能力目标、实验任务、知识与AI应用、产业数据与案例依据。",
+      "source_id": "SRC-PUBLIC",
+      "content_status": "设计示例"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "COURSE-01",
+      "layer": 1,
+      "node_type": "course",
+      "short_title": "柔性产线设计与控制",
+      "title": "智能制造产线模块化设计及控制虚拟仿真实验",
+      "description": "参考课程以轴和轴套类零件生产为主线，涉及存储、运输、加工、检测与装配。本图新增能力阶梯、AI引导和证据映射。",
+      "source_id": "SRC-PUBLIC",
+      "content_status": "公开资料",
+      "sort_order": 1
+    },
+    {
+      "node_id": "CAP-01",
+      "layer": 2,
+      "node_type": "capability",
+      "short_title": "方案设计",
+      "title": "产线方案设计能力",
+      "description": "根据订单目标与工艺约束完成设备选型、工艺路线规划及方案论证。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 1
+    },
+    {
+      "node_id": "CAP-02",
+      "layer": 2,
+      "node_type": "capability",
+      "short_title": "系统集成",
+      "title": "模块化系统集成能力",
+      "description": "把仓储、运输、加工、检测与装配模块组织为满足工艺约束的产线。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 2
+    },
+    {
+      "node_id": "CAP-03",
+      "layer": 2,
+      "node_type": "capability",
+      "short_title": "调试控制",
+      "title": "产线调试与控制能力",
+      "description": "完成控制时序、设备互锁与异常恢复验证，并解释控制逻辑。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 3
+    },
+    {
+      "node_id": "CAP-04",
+      "layer": 2,
+      "node_type": "capability",
+      "short_title": "分析优化",
+      "title": "产线分析与优化能力",
+      "description": "依据过程数据识别瓶颈，比较改造方案并说明效率、质量和资源约束。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 4
+    },
+    {
+      "node_id": "TASK-01",
+      "layer": 3,
+      "node_type": "task",
+      "short_title": "需求与工艺分析",
+      "title": "将生产需求转为可验证的实验任务",
+      "description": "读取轴与轴套零件图和订单，整理工艺顺序、质量要求与产能目标，形成约束清单。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 1
+    },
+    {
+      "node_id": "TASK-02",
+      "layer": 3,
+      "node_type": "task",
+      "short_title": "产线模块配置",
+      "title": "设计可执行的模块化产线",
+      "description": "选择仓储、运输、加工、检测和装配模块，说明模块配置与工艺路线的一致性。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 2
+    },
+    {
+      "node_id": "TASK-03",
+      "layer": 3,
+      "node_type": "task",
+      "short_title": "控制与联锁调试",
+      "title": "验证设备协同与安全联锁",
+      "description": "配置PLC动作序列，验证前置条件、完成信号、设备互锁及恢复流程。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 3
+    },
+    {
+      "node_id": "TASK-04",
+      "layer": 3,
+      "node_type": "task",
+      "short_title": "加工瓶颈识别",
+      "title": "识别限制产出效率的关键工序",
+      "description": "读取工序工时与资源配置，结合排队和完工记录定位瓶颈，并验证预测。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 4
+    },
+    {
+      "node_id": "TASK-05",
+      "layer": 3,
+      "node_type": "task",
+      "short_title": "并行方案比较",
+      "title": "为什么增加加工工位后仍然受限",
+      "description": "比较基准产线与并行加工方案，解释瓶颈迁移，提交改进依据。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 5
+    },
+    {
+      "node_id": "TASK-06",
+      "layer": 3,
+      "node_type": "task",
+      "short_title": "复杂工况优化",
+      "title": "在多约束条件下完成产线改进",
+      "description": "针对订单变化或设备不可用场景调整方案，验证质量、安全、资源及效率约束，说明适用边界。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 6
+    },
+    {
+      "node_id": "KNOW-01",
+      "layer": 4,
+      "node_type": "knowledge",
+      "short_title": "制造工艺",
+      "title": "机械制造工艺与路线约束",
+      "description": "解释零件特征、工艺顺序、设备选择与工序依赖关系。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 1
+    },
+    {
+      "node_id": "KNOW-02",
+      "layer": 4,
+      "node_type": "knowledge",
+      "short_title": "PLC时序",
+      "title": "PLC时序与信号逻辑",
+      "description": "区分启动条件、动作执行、完成反馈和异常中断，建立可验证的状态转换。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 2
+    },
+    {
+      "node_id": "KNOW-03",
+      "layer": 4,
+      "node_type": "knowledge",
+      "short_title": "安全联锁",
+      "title": "设备联锁与异常恢复",
+      "description": "识别互斥动作和恢复前置条件。具体规则须以真实设备规程为准。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 3
+    },
+    {
+      "node_id": "KNOW-04",
+      "layer": 4,
+      "node_type": "knowledge",
+      "short_title": "运输调度",
+      "title": "物料运输与调度",
+      "description": "分析路径、运输资源竞争、等待及供料节奏对产线运行的影响。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 4
+    },
+    {
+      "node_id": "KNOW-05",
+      "layer": 4,
+      "node_type": "knowledge",
+      "short_title": "瓶颈与平衡",
+      "title": "瓶颈分析与产能平衡",
+      "description": "在明确模型边界下分析单工序能力、在制品等待与系统产出，避免把单机加速等同整线提升。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 5
+    },
+    {
+      "node_id": "KNOW-06",
+      "layer": 4,
+      "node_type": "knowledge",
+      "short_title": "质量与约束",
+      "title": "质量公差与多目标约束",
+      "description": "比较效率提升与质量、安全、成本、能耗要求之间的权衡。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 6
+    },
+    {
+      "node_id": "MODEL-01",
+      "layer": 4,
+      "node_type": "model",
+      "short_title": "离散事件仿真",
+      "title": "产线离散事件与资源排队模型",
+      "description": "基于工艺先后、工时、设备数量及资源可用性计算运行记录；正式接入需验证规则与实际产线的一致性。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 7
+    },
+    {
+      "node_id": "MODEL-02",
+      "layer": 4,
+      "node_type": "model",
+      "short_title": "动作与干涉校验",
+      "title": "设备动作及干涉校验模型",
+      "description": "校核动作范围、相对位置、互锁和碰撞条件。当前仅定义接入位置，未接入仿真引擎。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 8
+    },
+    {
+      "node_id": "MODEL-03",
+      "layer": 4,
+      "node_type": "model",
+      "short_title": "AI引导策略",
+      "title": "基于课程知识和实验状态的AI引导",
+      "description": "实验前辅助方案论证，实验中解释异常，实验后辅助反思。建议应附依据，数值由经校核的仿真工具提供。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 9
+    },
+    {
+      "node_id": "DATA-01",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "订单与零件图",
+      "title": "轴与轴套订单和零件图",
+      "description": "拟提供规格、数量、公差、交期与图纸版本，作为任务约束。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 1
+    },
+    {
+      "node_id": "DATA-02",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "设备参数",
+      "title": "设备参数与资源配置表",
+      "description": "拟提供设备型号、能力、工位数量、动作范围与适用条件。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 2
+    },
+    {
+      "node_id": "DATA-03",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "真实工序记录",
+      "title": "企业或实验室实测工序记录",
+      "description": "拟提供采集时间、设备、工序、开始结束时刻及工况；需授权和质量校验。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 3
+    },
+    {
+      "node_id": "DATA-04",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "工艺与安全规程",
+      "title": "工艺规范及安全操作规程",
+      "description": "拟关联受控文件、有效版本、适用设备和约束条款。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 4
+    },
+    {
+      "node_id": "DATA-05",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "标准产线案例",
+      "title": "标准产线与模块化设计案例",
+      "description": "拟收集原始方案、配置依据、运行结果及教师评析。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 5
+    },
+    {
+      "node_id": "DATA-06",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "异常工况案例",
+      "title": "订单变化与设备异常案例",
+      "description": "拟提供异常触发条件、影响范围、处理过程与验证结果。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 6
+    },
+    {
+      "node_id": "DATA-07",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "课程知识条目",
+      "title": "可引用的课程知识资源",
+      "description": "拟提供知识条目正文、出处、适用条件、审核人与版本。",
+      "source_id": "SRC-PENDING",
+      "content_status": "待补充",
+      "sort_order": 7
+    },
+    {
+      "node_id": "DATA-08",
+      "layer": 5,
+      "node_type": "resource",
+      "short_title": "合成工时示例",
+      "title": "用于瓶颈迁移讲解的合成数据",
+      "description": "五阶段工时6/9/24/10/16秒；30件单类工件；独立资源、无限缓冲。未包含真实配套装配、质量、成本或能耗。",
+      "source_id": "SRC-DEMO",
+      "content_status": "演示数据",
+      "sort_order": 8
+    },
+    {
+      "node_id": "AI-01",
+      "layer": 4,
+      "node_type": "ai",
+      "short_title": "AI方案设计",
+      "title": "实验前：设计轴与轴套加工产线",
+      "description": "接到轴与轴套生产任务后，先明确零件规格、质量要求和交付数量。AI协助梳理工艺顺序，对照设备参数比较加工与运输模块，提示方案中遗漏的约束。\n完成任务：提交产线布局、工艺路线和设备选型理由，进入仿真验证。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 10
+    },
+    {
+      "node_id": "AI-02",
+      "layer": 4,
+      "node_type": "ai",
+      "short_title": "AI资源推荐",
+      "title": "实验前：找到当前任务所需的资料",
+      "description": "配置加工与装配模块时，需要先弄清设备适用范围和操作要求。AI根据当前任务推荐工艺规程、产线案例与知识条目，并说明每份资料能解决什么问题。\n完成任务：整理方案采用的参数、操作要求及参考资料。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 11
+    },
+    {
+      "node_id": "AI-03",
+      "layer": 4,
+      "node_type": "ai",
+      "short_title": "AI实时诊断",
+      "title": "实验中：定位产线停机与工序拥堵",
+      "description": "调试时，遇到设备等待、动作未触发或工件排队，先查看对应工序和信号状态。AI结合操作记录，引导排查前置条件、联锁信号和上下游节拍，帮助区分控制异常与产能瓶颈。\n完成任务：修正控制或配置后重新运行，用前后记录验证判断。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 12
+    },
+    {
+      "node_id": "AI-04",
+      "layer": 4,
+      "node_type": "ai",
+      "short_title": "AI成果优化",
+      "title": "实验后：解释增设工位后的产能变化",
+      "description": "完成基准方案与并行加工方案后，比较加工等待、设备利用和整线产出。AI引导分析“增加加工工位后，为什么产量没有同步提升”，核对运输、检测或装配是否成为新的限制。\n完成任务：提交方案对比和改进理由，再运行验证。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 13
+    },
+    {
+      "node_id": "AI-05",
+      "layer": 4,
+      "node_type": "ai",
+      "short_title": "AI反思指导",
+      "title": "实验后：复盘一次调试中的问题",
+      "description": "回看设备联锁调试中的错误操作、步骤得分和实验报告。AI围绕“漏查了哪个条件、为什么这样修改、如何证明问题已解决”提出追问，帮助把操作经历整理成可解释的结论。\n完成任务：补全原因分析、修改记录和复测结果，提交教师评价。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 14
+    },
+    {
+      "node_id": "AI-06",
+      "layer": 4,
+      "node_type": "ai",
+      "short_title": "AI创新规划",
+      "title": "实验后：应对订单变化与设备停机",
+      "description": "在已完成的产线方案上，加入订单组合变化或一台加工设备停机的情境。AI协助拆解需要调整的设备、路线和调度策略，提出比较方案及验证顺序。\n完成任务：在质量与安全要求下完成多工况对比，说明方案适用范围。",
+      "source_id": "SRC-DESIGN",
+      "content_status": "设计示例",
+      "sort_order": 15
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "REL-001",
+      "from_id": "COURSE-01",
+      "to_id": "CAP-01",
+      "relation": "培养",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-002",
+      "from_id": "COURSE-01",
+      "to_id": "CAP-02",
+      "relation": "培养",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-003",
+      "from_id": "COURSE-01",
+      "to_id": "CAP-03",
+      "relation": "培养",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-004",
+      "from_id": "COURSE-01",
+      "to_id": "CAP-04",
+      "relation": "培养",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-005",
+      "from_id": "CAP-01",
+      "to_id": "TASK-01",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-006",
+      "from_id": "CAP-01",
+      "to_id": "TASK-02",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-007",
+      "from_id": "CAP-01",
+      "to_id": "TASK-06",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-008",
+      "from_id": "CAP-02",
+      "to_id": "TASK-02",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-009",
+      "from_id": "CAP-02",
+      "to_id": "TASK-03",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-010",
+      "from_id": "CAP-03",
+      "to_id": "TASK-03",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-011",
+      "from_id": "CAP-03",
+      "to_id": "TASK-06",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-012",
+      "from_id": "CAP-04",
+      "to_id": "TASK-04",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-013",
+      "from_id": "CAP-04",
+      "to_id": "TASK-05",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-014",
+      "from_id": "CAP-04",
+      "to_id": "TASK-06",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-015",
+      "from_id": "TASK-01",
+      "to_id": "KNOW-01",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-016",
+      "from_id": "TASK-01",
+      "to_id": "KNOW-06",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-017",
+      "from_id": "TASK-02",
+      "to_id": "KNOW-01",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-018",
+      "from_id": "TASK-02",
+      "to_id": "KNOW-04",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-019",
+      "from_id": "TASK-02",
+      "to_id": "KNOW-05",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-020",
+      "from_id": "TASK-03",
+      "to_id": "KNOW-02",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-021",
+      "from_id": "TASK-03",
+      "to_id": "KNOW-03",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-022",
+      "from_id": "TASK-04",
+      "to_id": "KNOW-05",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-023",
+      "from_id": "TASK-04",
+      "to_id": "KNOW-04",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-024",
+      "from_id": "TASK-05",
+      "to_id": "KNOW-05",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-025",
+      "from_id": "TASK-05",
+      "to_id": "KNOW-06",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-026",
+      "from_id": "TASK-06",
+      "to_id": "KNOW-03",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-027",
+      "from_id": "TASK-06",
+      "to_id": "KNOW-05",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-028",
+      "from_id": "TASK-06",
+      "to_id": "KNOW-06",
+      "relation": "依托知识",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-029",
+      "from_id": "TASK-01",
+      "to_id": "MODEL-03",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-030",
+      "from_id": "TASK-02",
+      "to_id": "MODEL-01",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-031",
+      "from_id": "TASK-02",
+      "to_id": "MODEL-02",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-032",
+      "from_id": "TASK-03",
+      "to_id": "MODEL-02",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-033",
+      "from_id": "TASK-03",
+      "to_id": "MODEL-03",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-034",
+      "from_id": "TASK-04",
+      "to_id": "MODEL-01",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-035",
+      "from_id": "TASK-04",
+      "to_id": "MODEL-03",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-036",
+      "from_id": "TASK-05",
+      "to_id": "MODEL-01",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-037",
+      "from_id": "TASK-05",
+      "to_id": "MODEL-03",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-038",
+      "from_id": "TASK-06",
+      "to_id": "MODEL-01",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-039",
+      "from_id": "TASK-06",
+      "to_id": "MODEL-02",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-040",
+      "from_id": "TASK-06",
+      "to_id": "MODEL-03",
+      "relation": "调用模型",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-041",
+      "from_id": "KNOW-01",
+      "to_id": "DATA-01",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-042",
+      "from_id": "KNOW-01",
+      "to_id": "DATA-04",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-043",
+      "from_id": "KNOW-02",
+      "to_id": "DATA-02",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-044",
+      "from_id": "KNOW-02",
+      "to_id": "DATA-07",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-045",
+      "from_id": "KNOW-03",
+      "to_id": "DATA-04",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-046",
+      "from_id": "KNOW-03",
+      "to_id": "DATA-06",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-047",
+      "from_id": "KNOW-04",
+      "to_id": "DATA-02",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-048",
+      "from_id": "KNOW-04",
+      "to_id": "DATA-05",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-049",
+      "from_id": "KNOW-05",
+      "to_id": "DATA-03",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-050",
+      "from_id": "KNOW-05",
+      "to_id": "DATA-08",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-051",
+      "from_id": "KNOW-06",
+      "to_id": "DATA-01",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-052",
+      "from_id": "KNOW-06",
+      "to_id": "DATA-04",
+      "relation": "依据资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-053",
+      "from_id": "MODEL-01",
+      "to_id": "DATA-02",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-054",
+      "from_id": "MODEL-01",
+      "to_id": "DATA-03",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-055",
+      "from_id": "MODEL-01",
+      "to_id": "DATA-08",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-056",
+      "from_id": "MODEL-02",
+      "to_id": "DATA-02",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-057",
+      "from_id": "MODEL-02",
+      "to_id": "DATA-04",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-058",
+      "from_id": "MODEL-03",
+      "to_id": "DATA-05",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-059",
+      "from_id": "MODEL-03",
+      "to_id": "DATA-06",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-060",
+      "from_id": "MODEL-03",
+      "to_id": "DATA-07",
+      "relation": "读取资源",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-061",
+      "from_id": "CAP-02",
+      "to_id": "TASK-06",
+      "relation": "通过任务训练",
+      "description": "",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-062",
+      "from_id": "TASK-01",
+      "to_id": "AI-01",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-063",
+      "from_id": "TASK-02",
+      "to_id": "AI-01",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-064",
+      "from_id": "AI-01",
+      "to_id": "DATA-01",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-065",
+      "from_id": "AI-01",
+      "to_id": "DATA-02",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-066",
+      "from_id": "AI-01",
+      "to_id": "DATA-05",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-067",
+      "from_id": "TASK-01",
+      "to_id": "AI-02",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-068",
+      "from_id": "TASK-02",
+      "to_id": "AI-02",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-069",
+      "from_id": "TASK-06",
+      "to_id": "AI-02",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-070",
+      "from_id": "AI-02",
+      "to_id": "DATA-04",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-071",
+      "from_id": "AI-02",
+      "to_id": "DATA-05",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-072",
+      "from_id": "AI-02",
+      "to_id": "DATA-07",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-073",
+      "from_id": "TASK-03",
+      "to_id": "AI-03",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-074",
+      "from_id": "TASK-04",
+      "to_id": "AI-03",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-075",
+      "from_id": "AI-03",
+      "to_id": "DATA-02",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-076",
+      "from_id": "AI-03",
+      "to_id": "DATA-03",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-077",
+      "from_id": "AI-03",
+      "to_id": "DATA-06",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-078",
+      "from_id": "TASK-05",
+      "to_id": "AI-04",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-079",
+      "from_id": "TASK-06",
+      "to_id": "AI-04",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-080",
+      "from_id": "AI-04",
+      "to_id": "DATA-03",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-081",
+      "from_id": "AI-04",
+      "to_id": "DATA-05",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-082",
+      "from_id": "AI-04",
+      "to_id": "DATA-08",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-083",
+      "from_id": "TASK-03",
+      "to_id": "AI-05",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-084",
+      "from_id": "TASK-05",
+      "to_id": "AI-05",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-085",
+      "from_id": "TASK-06",
+      "to_id": "AI-05",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-086",
+      "from_id": "AI-05",
+      "to_id": "DATA-04",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-087",
+      "from_id": "AI-05",
+      "to_id": "DATA-06",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-088",
+      "from_id": "AI-05",
+      "to_id": "DATA-07",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-089",
+      "from_id": "TASK-06",
+      "to_id": "AI-06",
+      "relation": "应用AI功能",
+      "description": "该实验任务使用此AI功能辅助学习、诊断或改进。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-090",
+      "from_id": "AI-06",
+      "to_id": "DATA-01",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-091",
+      "from_id": "AI-06",
+      "to_id": "DATA-05",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "edge_id": "REL-092",
+      "from_id": "AI-06",
+      "to_id": "DATA-06",
+      "relation": "依据资源",
+      "description": "该AI功能引用此数据或案例，展示来源并按资源状态接入。",
+      "source_id": "SRC-DESIGN"
+    }
+  ],
+  "standards": [
+    {
+      "standard_id": "STD-01-L1",
+      "capability_id": "CAP-01",
+      "level": "L1",
+      "level_name": "专业应用",
+      "goal": "读懂任务并识别关键工艺约束",
+      "elements": "需求识别;工艺顺序;约束表达",
+      "criteria": "准确列出规格、质量及工艺前置条件，能指出依据文件。",
+      "task_ids": "TASK-01",
+      "evidence_ids": "EV-01;EV-03;EV-07",
+      "mandatory_conditions": "不得遗漏教师指定的关键约束",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-01-L2",
+      "capability_id": "CAP-01",
+      "level": "L2",
+      "level_name": "综合设计",
+      "goal": "形成并验证可执行的产线方案",
+      "elements": "设备选型;路线设计;方案验证",
+      "criteria": "提交完整配置与工艺路线，运行记录能够对应所提交方案。",
+      "task_ids": "TASK-02",
+      "evidence_ids": "EV-03;EV-04;EV-07",
+      "mandatory_conditions": "方案版本与运行参数一致",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-01-L3",
+      "capability_id": "CAP-01",
+      "level": "L3",
+      "level_name": "复杂问题解决",
+      "goal": "在变化需求下论证方案取舍",
+      "elements": "多目标权衡;变更设计;适用边界",
+      "criteria": "比较至少两种候选方案，解释质量、效率与资源约束，提交多工况验证。",
+      "task_ids": "TASK-06",
+      "evidence_ids": "EV-03;EV-04;EV-07;EV-08",
+      "mandatory_conditions": "关键质量及安全约束通过，教师复核完成",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-02-L1",
+      "capability_id": "CAP-02",
+      "level": "L1",
+      "level_name": "专业应用",
+      "goal": "识别模块功能和接口依赖",
+      "elements": "模块认知;接口识别;顺序关系",
+      "criteria": "正确说明取料、运输、加工、检测和装配之间的输入输出。",
+      "task_ids": "TASK-02",
+      "evidence_ids": "EV-01;EV-03;EV-07",
+      "mandatory_conditions": "工艺先后关系正确",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-02-L2",
+      "capability_id": "CAP-02",
+      "level": "L2",
+      "level_name": "综合设计",
+      "goal": "配置并联调完整产线",
+      "elements": "模块组合;信号连接;联合调试",
+      "criteria": "配置与动作序列一致，典型运行流程完整，无未处理的关键接口错误。",
+      "task_ids": "TASK-02;TASK-03",
+      "evidence_ids": "EV-02;EV-04;EV-06;EV-07",
+      "mandatory_conditions": "关键联锁通过",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-02-L3",
+      "capability_id": "CAP-02",
+      "level": "L3",
+      "level_name": "复杂问题解决",
+      "goal": "完成跨模块的产线重构",
+      "elements": "资源协调;接口变更;边界验证",
+      "criteria": "说明重构对上下游的影响，并验证多场景下接口与资源约束。",
+      "task_ids": "TASK-06",
+      "evidence_ids": "EV-04;EV-06;EV-07;EV-08",
+      "mandatory_conditions": "重构后的关键联锁重新验证",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-03-L1",
+      "capability_id": "CAP-03",
+      "level": "L1",
+      "level_name": "专业应用",
+      "goal": "按规则完成控制流程",
+      "elements": "动作执行;状态识别;异常记录",
+      "criteria": "完成规定操作并解释启动、完成与停止信号的含义。",
+      "task_ids": "TASK-03",
+      "evidence_ids": "EV-01;EV-02;EV-07",
+      "mandatory_conditions": "关键安全操作全部满足",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-03-L2",
+      "capability_id": "CAP-03",
+      "level": "L2",
+      "level_name": "综合设计",
+      "goal": "独立配置并验证控制逻辑",
+      "elements": "时序设计;互锁配置;恢复验证",
+      "criteria": "验证正常和异常路径，提供规则检查结果及恢复条件说明。",
+      "task_ids": "TASK-03",
+      "evidence_ids": "EV-02;EV-06;EV-07",
+      "mandatory_conditions": "不得用总分抵消关键项失败",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-03-L3",
+      "capability_id": "CAP-03",
+      "level": "L3",
+      "level_name": "复杂问题解决",
+      "goal": "诊断复杂异常并验证恢复",
+      "elements": "故障定位;跨模块诊断;恢复策略",
+      "criteria": "在设备状态变化场景中定位影响链，验证恢复后不会破坏原有约束。",
+      "task_ids": "TASK-06",
+      "evidence_ids": "EV-02;EV-06;EV-07;EV-08",
+      "mandatory_conditions": "异常及恢复两种路径均留存证据",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-04-L1",
+      "capability_id": "CAP-04",
+      "level": "L1",
+      "level_name": "专业应用",
+      "goal": "根据数据定位瓶颈",
+      "elements": "工时读取;产能判断;证据引用",
+      "criteria": "说明瓶颈工序及其依据，能从结论返回对应工序记录。",
+      "task_ids": "TASK-04",
+      "evidence_ids": "EV-01;EV-03;EV-05;EV-07",
+      "mandatory_conditions": "工况和模型边界明确",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-04-L2",
+      "capability_id": "CAP-04",
+      "level": "L2",
+      "level_name": "综合设计",
+      "goal": "比较方案并解释瓶颈迁移",
+      "elements": "对照设计;运行比较;原因解释",
+      "criteria": "使用同一可比条件运行基准和改进方案，解释结果及瓶颈迁移。",
+      "task_ids": "TASK-05",
+      "evidence_ids": "EV-03;EV-04;EV-05;EV-07",
+      "mandatory_conditions": "配置与模型版本可追溯",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "standard_id": "STD-04-L3",
+      "capability_id": "CAP-04",
+      "level": "L3",
+      "level_name": "复杂问题解决",
+      "goal": "完成多约束下的优化论证",
+      "elements": "多工况验证;质量约束;资源权衡",
+      "criteria": "比较效率与资源投入，检查质量和安全约束，说明未覆盖的工况与局限。",
+      "task_ids": "TASK-06",
+      "evidence_ids": "EV-03;EV-05;EV-06;EV-07;EV-08",
+      "mandatory_conditions": "所有关键约束通过且教师复核完成",
+      "review_mode": "规则校验与教师复核",
+      "source_id": "SRC-DESIGN"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EV-01",
+      "title": "步骤得分与完成记录",
+      "task_ids": "TASK-01;TASK-02;TASK-03;TASK-04",
+      "source_type": "现有步骤得分",
+      "source_fields": "attempt_id;step_id;score;max_score;completed_at",
+      "mapping_rule": "保留原步骤表；按稳定步骤编号关联任务，不改变原始分数。",
+      "availability": "可做字段映射",
+      "missing_behavior": "证据不足，不按0分处理",
+      "source_id": "SRC-EXISTING"
+    },
+    {
+      "evidence_id": "EV-02",
+      "title": "操作过程与错误记录",
+      "task_ids": "TASK-02;TASK-03;TASK-05;TASK-06",
+      "source_type": "现有操作记录",
+      "source_fields": "attempt_id;step_id;action;occurred_at;error_code",
+      "mapping_rule": "依据操作顺序与错误类型提供过程证据；用时需结合工况解释。",
+      "availability": "可做字段映射",
+      "missing_behavior": "标记缺少过程证据",
+      "source_id": "SRC-EXISTING"
+    },
+    {
+      "evidence_id": "EV-03",
+      "title": "实验报告与反思",
+      "task_ids": "TASK-01;TASK-02;TASK-04;TASK-05;TASK-06",
+      "source_type": "现有实验报告",
+      "source_fields": "attempt_id;report_id;report_sections;submitted_at;review_status",
+      "mapping_rule": "关联设计、分析、结论和反思章节；等待教师复核时不形成最终达成。",
+      "availability": "可做字段映射",
+      "missing_behavior": "报告未提交或待复核",
+      "source_id": "SRC-EXISTING"
+    },
+    {
+      "evidence_id": "EV-04",
+      "title": "方案版本及配置快照",
+      "task_ids": "TASK-02;TASK-05;TASK-06",
+      "source_type": "新增方案记录",
+      "source_fields": "attempt_id;plan_id;plan_version;config_snapshot",
+      "mapping_rule": "每次运行绑定实际使用的配置版本，用于方案前后对比。",
+      "availability": "待补接口",
+      "missing_behavior": "无法追溯方案，暂不判定设计达成",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "evidence_id": "EV-05",
+      "title": "工序事件与运行结果",
+      "task_ids": "TASK-04;TASK-05;TASK-06",
+      "source_type": "新增仿真运行记录",
+      "source_fields": "attempt_id;run_id;job_id;station_id;start_at;end_at;model_version",
+      "mapping_rule": "保存逐件逐工序记录，结果必须能返回参数和模型版本。",
+      "availability": "待补接口",
+      "missing_behavior": "无运行证据，结论待验证",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "evidence_id": "EV-06",
+      "title": "联锁与约束验证",
+      "task_ids": "TASK-03;TASK-06",
+      "source_type": "新增规则校验",
+      "source_fields": "attempt_id;check_id;rule_version;passed;failure_reason",
+      "mapping_rule": "关键安全条件必须单独核对；一般分数不抵消关键项失败。",
+      "availability": "待补接口",
+      "missing_behavior": "关键项未验证，达成待确认",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "evidence_id": "EV-07",
+      "title": "教师量规评价",
+      "task_ids": "TASK-01;TASK-02;TASK-03;TASK-04;TASK-05;TASK-06",
+      "source_type": "教师批阅",
+      "source_fields": "attempt_id;rubric_id;reviewer_id;rating;comment;reviewed_at",
+      "mapping_rule": "对方案合理性、解释质量和复杂问题论证进行复核，保留标准版本。",
+      "availability": "待确认批阅字段",
+      "missing_behavior": "待教师复核，不生成最终等级",
+      "source_id": "SRC-DESIGN"
+    },
+    {
+      "evidence_id": "EV-08",
+      "title": "多工况验证记录",
+      "task_ids": "TASK-06",
+      "source_type": "新增场景测试",
+      "source_fields": "attempt_id;scenario_id;constraint_results;comparison;limitations",
+      "mapping_rule": "记录不同工况下的结果、约束通过情况及适用限制。",
+      "availability": "待补接口",
+      "missing_behavior": "证据不足，不能认定复杂问题解决",
+      "source_id": "SRC-DESIGN"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-PUBLIC",
+      "title": "轴与轴套智能制造产线课程介绍",
+      "source_type": "公开资料",
+      "url": "https://www.ilab-x.com/details/page?id=12665&isView=true",
+      "description": "课程公开介绍以轴与轴套生产为背景，覆盖仓储、运输、加工、检测、打标和装配，包含设备操作、参数设置、MES下单及自动化控制。",
+      "checked_on": "2026-10-18"
+    },
+    {
+      "source_id": "SRC-DESIGN",
+      "title": "本实验学习任务与AI引导说明",
+      "source_type": "设计示例",
+      "url": "",
+      "description": "基于轴与轴套产线课程背景，扩展订单分析、联锁排查和瓶颈优化等学习任务。AI部分介绍预期的引导方式；当前图谱用于浏览教学关系，尚未连接AI服务。",
+      "checked_on": "2026-10-18"
+    },
+    {
+      "source_id": "SRC-DEMO",
+      "title": "合成教学工时示例",
+      "source_type": "演示数据",
+      "url": "",
+      "description": "取料6秒、运输9秒、加工24秒、检测10秒、装配16秒；用于解释瓶颈迁移，非企业实测数据。",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "source_id": "SRC-PENDING",
+      "title": "待补充的课程及企业资料",
+      "source_type": "待补充",
+      "url": "",
+      "description": "需补充实际文件、授权、版本、适用工况及模型校核记录；不能以空资源记录作为真实接入证明。",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "source_id": "SRC-EXISTING",
+      "title": "用户确认的现有实验数据类型",
+      "source_type": "设计示例",
+      "url": "",
+      "description": "用户确认已有步骤得分、操作记录、实验报告。尚未取得真实样本；本包字段名称仅为内部对接建议。",
+      "checked_on": "2026-10-16"
+    }
+  ]
+}
